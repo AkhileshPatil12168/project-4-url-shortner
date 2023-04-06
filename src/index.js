@@ -11,13 +11,13 @@ app.use(bodyParser.json())
 
 app.use(bodyParser.urlencoded({ extended: true }));
 
-mongoose.connect("mongodb+srv://iamaditya:gbCsJkKLQc8U2oyp@cluster0.brptf5o.mongodb.net/Group-22?retryWrites=true&w=majority",{useNewUrlParser:true})
+mongoose.connect("mongodb+srv://halfblood12168:48586566@cluster0.io4zr36.mongodb.net/urlShortener",{useNewUrlParser:true})
 .then(()=>{
     console.log("MongoDB Connected..")
 }).catch(err=>{
     console.log(err.message);
 })
-
+ 
 app.use('/',route)
 
 app.listen(process.env.PORT || 3000, function () {
